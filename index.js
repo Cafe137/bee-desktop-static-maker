@@ -21,7 +21,7 @@ async function buildRepository(directory) {
 }
 
 await mkdir(dirname)
-await cloneRepository('ethersphere/bee-dashboard', dirname, 'feat/account-tabs')
+await cloneRepository('ethersphere/bee-dashboard', dirname)
 await cloneRepository('ethersphere/desktop-node-installer', dirname)
 await buildRepository(beeDashboardDir)
 await buildRepository(installerDir)
